@@ -31,15 +31,13 @@ parser.add_argument('command',
 
 
 # Optional Arguments
-parser.add_argument("-a", "--add",
-                    help="specify foo",
-                    action='store_true')
+
 parser.add_argument("-D", "--deleteAll",
                     help="no args",
                     action="store_true")
 parser.add_argument("-d", "--delete",
-                    help="url to remove",
-                    metavar='url_to_delete')
+                    help="id to remove",
+                    metavar='id_to_remove')
 
 args = parser.parse_args()
 
